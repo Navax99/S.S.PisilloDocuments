@@ -1,0 +1,129 @@
+############################## S.S. PISILLO COMBAT PROTOCOL PROPOSAL v1.0 ##############################
+
+### Seqüencia després d'un salt ###
+
+    - El Science officer / Egineering officer són els responsables d'indicar el temps restant per la finalització del salt. Preferiblement donaran avisos quan faltin 30 segons i 10 segons.
+    - Engineering officer: "salt completat: estat nominal, tots els sistemes operatius / qualsevol anomalia"
+
+    - Un cop finalitzat el salt, el capità demanarà reports als diferents oficials. L'ordre serà en última instància a discreció del capità, però s'hauria de cenyir a aquest esquema excepte que les circumstàncies recomanin un ordre diferent:
+
+    1- Captain -> Weapons officer: "CIC (centre d'informació i combat): reconeixement visual"
+
+       - Si hi ha un tripulant a la bateria del bridge i el Weapons officer no detecta targets:
+               Weapons Officer -> Operari de la bateria: "Bateria de proa informe"
+               Operari -> Weapons Officer: "no detecto objectius" / "Detecto track A/B/C/D/no designat... a les 1-12, elevació -90 - 90 graus (+ info rellevant)
+               Weapons officer -> Captain "CIC no detecta objectius amb reconeixement visual" / "Bateria principal confirma track A/B/C..."
+
+       - Si el Weapons Officer detecta objectius, tant si hi ha operari de la bateria de proa com si no:
+               Weapons Officer -> Captain: "Detecto track A/B/C/D/no designat... a les 1-12, elevació -90 - 90 graus (+ info rellevant (intencions, és aliat, dispara...))"
+
+       - Si el Weapons officer no detecta objectius i no hi ha tripulant a la bateria de proa:
+               Weapons officer -> Captain: "CIC no detecta objectius amb reconeixement visual."
+
+En aquest punt el capità decideix si dóna ordre d'atacar o adquirir una solució de tir contra l'enemic, o segueix demanant informes. En cas que decideix seguir demanant informes:
+
+   (això es fa a discreció del capità, ja que fer escanejos i llençar probes pot elevar el risc de ser detectat)
+
+   2- Captain -> Science Officer: "CIC: Escaneig actiu" (ordena realitzar scans i llençar probes)
+      - Science Officer -> Captain / CIC: "Detecto track designat A/B/C... demano confirmació visual"
+      - Weapons Officer / Bateria de proa -> Captain: "Confirmat track A/B/C... a les 1 - 12 elevació -90 - 90 graus"
+
+
+### Per donar ordres al CIC en combat o en alerta: ###
+
+    (opció prudent)
+    1- Captain -> Weapons Officer: "CIC, dona'm una solució de tir pel track A/B/C/no identificat"
+
+    2.1- Si hi ha solució de tir
+          - Weapons officer -> Captain "Solució de tir establerta (amb guns / amb missils / múltiple)"
+          - Operari torreta proa -> Captain / Weapons officer: "Bateria de proa, tinc solució de tir / no tinc solució de tir"
+
+    2.2- Si no hi ha solució de tir
+           - Weapons officer -> Captain "Objectiu fora del rang efectiu" /
+                       	     		"No tinc visual. Demano virar xx graus a Babor/Estribor" /
+                     			"No tinc visual. Demano roll en sentit horari / antihorari"/
+                     			"No tinc visual." (s'entèn que el pilot ha de maniobrar la nau com cregui per obtenir visual)
+           - Weapons officer -> Captain "Solució de tir establerta"
+
+      3- El capità decideix què fem 
+      3.1 - Ataquem:
+       	   - Captain -> Weapons Officer: "CIC, Elimina / Incapacita track/tracks A/B/C/no identificat"
+           - Weapons officer: "Eliminant track A/B/C amb railgun / missils / a discreció
+           - Weapons officer: "Bateria de proa, foc a discreció track A/B/C"
+           - Bateria de proa: "obrint foc track A/B/C"
+           - Cada cop que es dispara un missil: Weapons officer: "Bulldog!"
+     	   - Quan es detecta un misil enemic “Vampire, a les 1-12!”
+
+           - Weapons officer / bateria proa: track A/B/C eliminat
+
+           - Captain -> CIC: Alto el foc contra track A/B/C
+           - Captain -> CIC: Alto el foc!
+                 
+     (quan no hi ha temps i es vol atacar immediatament)
+
+     1- Captain -> CIC: "CIC, foc a discreció!"
+     	 - Weapons officer: eliminant track A/B/C a discreció
+         - Bateria proa: eliminant track A/B/C a discreció
+         - Weapons officer: Bateria de proa, centra el foc en track A/B/C
+         - Bateria proa: Atacant track A/B/C
+         - Weapons officer / bateria proa: track A/B/C eliminat
+
+
+### Report de danys ###
+
+En qualsevol moment l'Engineering Officer por reportar una emergència o reports de control de danys que siguin urgents:
+   - Engineering Officer -> Captain: "Control de danys: perdem integritat del casc de forma continuada, motiu desconegut!"
+
+En qualsevol moment el Capitain por demanar un informe de danys:
+
+   - Captain -> Engineering: "Control de danys, informe"
+   - Engineering -> reporta l'estat de la nau. (concretar)
+
+
+
+##### Exemple en combat #####
+
+Engineering officer: 10 segons per arribar
+Engineering officer: Salt completat, integritat del casc a 3000 de 3500, tots els sistemes operatius
+
+CP: "CIC: reconeixement visual"
+WO: "detecto objectiu no identificat, a les 9, elevació -30 graus"
+CP: "CIC: Escaneig actiu"
+SO: "Detecto tracks designats A i B a 1,2 i 3,5 clicks. Demano confirmació visual
+WO: "Confirmo track A a les 9 elevació -30 graus, és hostil!"
+Bateria Proa: "Confirmo track B a les 2, elevació 45 graus, confirmat hostil!"
+CP: "CIC: foc a discreció!"
+WO: "Eliminant track A a discreció!"
+Bateria Proa: "Bateria de proa obrint foc contra track B!"
+WO: "Bulldog!"
+WO: Vampire, a les 9! Bateria de proa, elimina’l!
+Bateria Proa: “Vampire eliminat! / negatiu, impacte a babor!”
+
+
+CP: "Control de danys, informe"
+EO: "Escuts a 80, sense danys"
+CP: "Augmenta l'energia als escuts"
+EO: "desviant energia de llums i life support"
+
+WO: Bulldog!
+
+EO: "Control de danys: escuts a 0, perdem integritat de casc!"
+
+WO: track A eliminat
+WO: No tinc visual de track B. demano roll en sentit antihorari, 45 graus!
+CP: (fent de pilot) "roll de 45 graus"
+WO: "solució de tir estalberta!"
+Bateria Proa: "Track B eliminat!"
+
+WO: tots els tracks eliminats, reconeixement visual negatiu
+CP: "CIC, escaneig actiu"
+SO: "No detecto tracks, llançant probes"
+SO: "Cap track detectat amb probes"
+
+CP: "Control de danys, informe"
+EO: "Casc a 2800, escuts regenerant-se, danys a life support i weapons"
+CP: "ixion, repara els danys a weapons i a life support"
+IX: "rebut"
+IX: "danys reparats"
+
+
